@@ -60,6 +60,7 @@ body{
     bottom: 8px;
     color: white;
     left: 8px;
+    font-size: 1em;
 }
 
 #rgb-val{
@@ -68,6 +69,7 @@ body{
     bottom: 8px;
     color: white;
     right: 8px;
+    font-size: 1em;
 }
 
 #modes {
