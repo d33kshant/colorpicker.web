@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="preview">
+        <p id="hex-val">#4169e1</p>
+        <p id="rgb-val">rgb(65, 105, 225)</p>
+      </div>
+      <div id="modes">
+        <button id="random" onclick="randomColor()"><span class="material-icons">shuffle</span></button>
+        <button class="mode active" id="mode-rgb" onclick="changeMode()">RGB</button>
+        <button class="mode" id="mode-hex" onclick="changeMode()">HEX</button>
+      </div>
+      <div id="sliders">
+        <input type="range" min="0" max="255" value="65" class="slider" id="red"/>
+        <input type="range" min="0" max="255" value="105" class="slider" id="green"/>
+        <input type="range" min="0" max="255" value="225" class="slider" id="blue"/>
+      </div>
+      <div id="input">
+        <input type="text" id="hex-input" value="#4169e1" onchange="applyHex()"/>
+      </div>
+    </div>
+  </body>
+</html>
