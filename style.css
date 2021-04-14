@@ -12,6 +12,8 @@ body{
     height: 40%;
     max-width: 30vh;
     max-height: 40vh;
+    min-height: 30vh;
+    min-width: 25vh;
     margin: auto;
     border-radius: 8px;
     border: 1px solid #5f6368;
